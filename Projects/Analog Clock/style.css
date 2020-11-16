@@ -1,0 +1,109 @@
+/* Layout */
+.main {
+    display: flex;
+    padding: 2em;
+    height: 90vh;
+    justify-content: space-evenly;
+    align-items: middle;
+}
+
+.clockbox,
+#clock {
+    width: 100%;
+    display: block;
+}
+
+.clockbox1,
+#clock1 {
+  width: 100%;
+  display: block;
+}
+
+.clockbox2,
+#clock2 {
+  width: 100%;
+  display: block;
+  /* align-items: baseline; */
+}
+
+.clockbox3,
+#clock3 {
+  width: 100%;
+  display: block;
+  /* align-items: baseline; */
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #000;
+}
+.hour-marks {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    /*transition: transform .5s ease-in-out;*/
+    /*The above transition statement creates a problem that after 60 seconds when we want the second hand to return to zero,
+    it goes back in anticlockwise direction instead of going forward to zero. This can be solved by removing the transition */
+
+}
+
+#hour1,
+#minute1,
+#second1 {
+    transform-origin: 300px 300px;
+    /*transition: transform .5s ease-in-out;*/
+    /*The above transition statement creates a problem that after 60 seconds when we want the second hand to return to zero,
+    it goes back in anticlockwise direction instead of going forward to zero. This can be solved by removing the transition */
+
+}
+#hour2,
+#minute2,
+#second2 {
+    transform-origin: 300px 300px;
+    /*transition: transform .5s ease-in-out;*/
+    /*The above transition statement creates a problem that after 60 seconds when we want the second hand to return to zero,
+    it goes back in anticlockwise direction instead of going forward to zero. This can be solved by removing the transition */
+
+}
